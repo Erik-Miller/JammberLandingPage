@@ -1,0 +1,76 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Landing Pages</title>
+  <meta name="description" content="A new Yeogurt application">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="container-fluid everything">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 left-content">
+        <div class="main-content"><img src="../images/JammberLogo.svg" class="img-responsive logo">
+          <h1>Payments, Scheduling, and Electronic Documents for the Music Industry</h1>
+          <p class="hidden-xs">Try it FREE for 2 weeks. Only $150 for 3 months afterwards (originally $250 per month). <br> <br>If Jammber does not meet your needs we promise your money back.</p><img src="../images/laptop.png" class="img-responsive laptop">
+        </div>
+        <div class="features hidden-xs">
+          <div class="feature-item"><img src="../images/moneyicon.png" class="img-responsive">
+            <p>Send & Receive Payments Quickly</p>
+          </div>
+          <div class="feature-item"><img src="../images/Paperworkicon.png" class="img-responsive">
+            <p>Manage Documents Electronically</p>
+          </div>
+          <div class="feature-item"><img src="../images/fingerprinticon.png" class="img-responsive">
+            <p>Track Contributions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 mobile-features visible-xs"><img src="../images/moneyicon.png" class="img-responsive">
+        <p>Send & Receive Payments Quickly</p><img src="../images/Paperworkicon.png" class="img-responsive">
+        <p>Manage Documents Electronically</p><img src="../images/fingerprinticon.png" class="img-responsive">
+        <p>Track Contributions </p>
+      </div>
+      <div class="col-xs-12 visible-xs offer-text">
+        <p>Try it FREE for 2 weeks. Only $150 for 3 months afterwards (originally $250 per month).</p>
+        <p>If Jammber does not meet your needs we promise your money back.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 right-form"> 
+        <h1>Register</h1>
+        <form data-parsley-validate=""> 
+          <h2>Personal Info</h2>
+          <input data-parsley-trigger="change" required placeholder="First Name" class="form-control">
+          <input required placeholder="Last Name" class="form-control">
+          <input data-parsley-required="false" placeholder="Business Name (optional)" class="form-control">
+          <input id="emailcheck" type="email" data-parsley-type="email" required placeholder="Email" data-parsley-equalto="emailcheck" class="form-control">
+          <input id="emailcheck" type="email" data-parsley-type="email" required placeholder="Confirm Email" data-parsley-equalto="emailcheck" class="form-control">
+          <input type="password" required placeholder="Password" class="form-control">
+          <h2>Card Info </h2>
+          <input required placeholder="Credit Card Number" data-parsley-minlength="16" data-parsley-type="digits" class="form-control">
+          <input required placeholder="First Name on Account" class="form-control">
+          <input required placeholder="Last Name on Account" class="form-control">
+          <input maxlength="2" required placeholder="Expiration Month" data-parsley-type="digits" class="form-control">
+          <input maxlength="2" required placeholder="Expiration Year" data-parsley-type="digits" class="form-control">
+          <input maxlength="3" required placeholder="CVV" data-parsley-type="digits" class="form-control">
+          <h2>Billing Address</h2>
+          <input required placeholder="Address" data-parsley-minlength="16" data-parsley-type="digits" class="form-control">
+          <input type="country" required placeholder="Billing Country" class="form-control">
+          <input maxlength="2" required placeholder="Billing State" data-parsley-type="digits" class="form-control">
+          <input maxlength="2" required placeholder="Billing City" data-parsley-type="digits" class="form-control">
+          <input maxlength="2" required placeholder="Billing Zip Code" data-parsley-type="digits" class="form-control">
+          <input type="submit" value="Register" class="btn-primary form-control">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body></html>

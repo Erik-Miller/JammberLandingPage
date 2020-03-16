@@ -1,0 +1,72 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+  .container-fluid.everything
+    .row
+      .col-xs-12.col-sm-8.left-content
+        .main-content
+          img.img-responsive.logo(src="../images/JammberLogo.svg")
+          h1 Payments, Scheduling, and Electronic Documents for the Music Industry
+          p.hidden-xs Try it FREE for 2 weeks. Only $150 for 3 months afterwards (originally $250 per month). </br> </br>If Jammber does not meet your needs we promise your money back.
+          img.img-responsive.laptop(src="../images/laptop.png")
+        .features.hidden-xs
+          .feature-item
+            img.img-responsive(src="../images/moneyicon.png")
+            p Send & Receive Payments Quickly
+          .feature-item
+            img.img-responsive(src="../images/Paperworkicon.png")
+            p Manage Documents Electronically
+          .feature-item
+            img.img-responsive(src="../images/fingerprinticon.png")
+            p Track Contributions
+
+      .col-xs-12.col-sm-8.mobile-features.visible-xs
+        img.img-responsive(src="../images/moneyicon.png")
+        p Send & Receive Payments Quickly
+        img.img-responsive(src="../images/Paperworkicon.png")
+        p Manage Documents Electronically
+        img.img-responsive(src="../images/fingerprinticon.png")
+        p Track Contributions 
+      .col-xs-12.visible-xs.offer-text
+        p Try it FREE for 2 weeks. Only $150 for 3 months afterwards (originally $250 per month).
+        p If Jammber does not meet your needs we promise your money back.
+
+
+      .col-xs-12.col-sm-4.right-form  
+        h1 Register
+        form(data-parsley-validate="") 
+
+
+          h2 Personal Info
+          input.form-control(type="text"  data-parsley-trigger="change" required="" placeholder="First Name") 
+          input.form-control(type="text" required="" placeholder="Last Name")
+          input.form-control(type="text" data-parsley-required="false" placeholder="Business Name (optional)")
+          input.form-control(id="emailcheck" type="email" data-parsley-type="email" required="" placeholder="Email" data-parsley-equalto="emailcheck") 
+          input.form-control(id="emailcheck" type="email" data-parsley-type="email" required="" placeholder="Confirm Email" data-parsley-equalto="emailcheck")
+          input.form-control(type="password" required="" placeholder="Password")
+
+
+          h2 Card Info 
+          input.form-control(type="text" required="" placeholder="Credit Card Number" data-parsley-minlength="16" data-parsley-type="digits")
+          input.form-control(type="text" required="" placeholder="First Name on Account")
+          input.form-control(type="text" required="" placeholder="Last Name on Account")
+          input.form-control(type="text" maxlength="2" required="" placeholder="Expiration Month" data-parsley-type="digits")
+          input.form-control(type="text" maxlength="2" required="" placeholder="Expiration Year" data-parsley-type="digits")
+          input.form-control(maxlength="3" type="text" required="" placeholder="CVV"  data-parsley-type="digits")  
+
+
+          h2 Billing Address
+          input.form-control(type="text" required="" placeholder="Address" data-parsley-minlength="16" data-parsley-type="digits")
+          input.form-control(type="country" required="" placeholder="Billing Country")
+          input.form-control(type="text" maxlength="2" required="" placeholder="Billing State" data-parsley-type="digits")
+          input.form-control(type="text" maxlength="2" required="" placeholder="Billing City" data-parsley-type="digits")
+          input.form-control(type="text" maxlength="2" required="" placeholder="Billing Zip Code" data-parsley-type="digits")
+
+
+          input.btn-primary.form-control(type="submit" value="Register")
+
+      
+
+   
